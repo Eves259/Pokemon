@@ -1,4 +1,4 @@
-function init(){
+function init1(){
     let charmander = {
         "abilities": [
         {
@@ -68,10 +68,14 @@ function init(){
         ],
         "weight": 85
     }
+    var char = JSON.stringify(charmander);
+    var mander = JSON.parse(char);
+
+    document.getElementById('something').innerHTML = mander.abilities[0].name;
+}
     
-    
-    
-    var charmeleon = {
+function init2(){
+    let charmeleon = {
         "abilities": [
         {
             "name": "blaze"
@@ -140,9 +144,11 @@ function init(){
         ],
         "weight": 190
     }
-    
-    
-    var charizard = {
+    var charm = JSON.stringify(charmeleon);
+    var meleon = JSON.parse(charm);
+}
+function init3(){
+    let charizard = {
         "abilities": [
         {
             "name": "blaze"
@@ -217,14 +223,6 @@ function init(){
         ],
         "weight": 905
     }
-    var char = JSON.stringify(charmander);
-    var mander = JSON.parse(char);
-    
-    var charm = JSON.stringify(charmeleon);
-    var meleon = JSON.parse(charm);
-    
     var chari = JSON.stringify(charizard);
     var zard = JSON.parse(chari);
 }
-
-init();
