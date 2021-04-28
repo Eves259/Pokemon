@@ -72,7 +72,7 @@ function init1(){
     var mander = JSON.parse(char);
 
     document.getElementById('AB-1').innerHTML = mander.abilities[0].name;
-    document.getElementById('Ab-2').innerHTML = mander.abilities[1].name;
+    document.getElementById('AB-2').innerHTML = mander.abilities[1].name;
 
     document.getElementById('BE').innerHTML = mander.base_experience;
     document.getElementById('height').innerHTML = mander.height;
