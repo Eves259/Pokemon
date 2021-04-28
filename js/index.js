@@ -72,7 +72,7 @@ function init1(){
     var mander = JSON.parse(char);
 
     document.getElementById('AB-1').innerHTML = mander.abilities[0].name;
-    document.getElementById('Ab-2').innerHTML = mander.abilities[1].name;
+    document.getElementById('AB-2').innerHTML = mander.abilities[1].name;
 
     document.getElementById('BE').innerHTML = mander.base_experience;
     document.getElementById('height').innerHTML = mander.height;
@@ -168,7 +168,7 @@ function init2(){
     var meleon = JSON.parse(charm);
 
     document.getElementById('AB-1').innerHTML = meleon.abilities[0].name;
-    document.getElementById('Ab-2').innerHTML = meleon.abilities[1].name;
+    document.getElementById('AB-2').innerHTML = meleon.abilities[1].name;
 
     document.getElementById('BE').innerHTML = meleon.base_experience;
     document.getElementById('height').innerHTML = meleon.height;
@@ -269,7 +269,7 @@ function init3(){
     var zard = JSON.parse(chari);
 
     document.getElementById('AB-1').innerHTML = zard.abilities[0].name;
-    document.getElementById('Ab-2').innerHTML = zard.abilities[1].name;
+    document.getElementById('AB-2').innerHTML = zard.abilities[1].name;
 
     document.getElementById('BE').innerHTML = zard.base_experience;
     document.getElementById('height').innerHTML = zard.height;
