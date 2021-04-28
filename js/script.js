@@ -1,3 +1,9 @@
+//Darkmode
+function dark () {
+    var element = document.body; //Sets the variable element equal to the HTML body
+    element.classList.toggle('darkmode');//This allows darkmode to be toggled on and off
+}
+
 var slideNumber = 1;
 showSlides(slideNumber);
 
@@ -22,4 +28,23 @@ function showSlides(n) { //This is used to change the image being shown in the s
         slides[i].style.display = 'none';
     }
     slides[slideNumber-1].style.display = 'block';
+}
+
+//Music
+var sound = document.getElementById("Groover");  //This sets the variable 'sound' equal to the id labeled 'Groover'
+
+function play() { //This plays music and is used in the activateSound function to do so.
+    sound.play();
+}
+
+function pause() { //This pauses music and is used in the activateSoundfunction to do this.
+    sound.pause();
+}
+
+function activateSound() { //This function is linked to a button. When the button is pressed it plays music and when it is pressed again it pauses the music. It uses the play and pause functions to do this.
+    if (sound.paused) {
+        sound.play();
+    } else {
+        sound.pause();
+    }
 }
